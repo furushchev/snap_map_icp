@@ -34,7 +34,7 @@
 #include <sensor_msgs/PointCloud2.h>
 #include <nav_msgs/OccupancyGrid.h>
 //for point_cloud::fromROSMsg
-#include <pcl/ros/conversions.h>
+#include <pcl/conversions.h>
 #include <pcl_conversions/pcl_conversions.h>
 #include <sensor_msgs/point_cloud_conversion.h>
 #include <sensor_msgs/LaserScan.h>

@@ -2,14 +2,14 @@ cmake_minimum_required(VERSION 2.8.3)
 project(snap_map_icp)
 
 find_package(catkin REQUIRED COMPONENTS
-	roscpp
-	laser_geometry
-	pcl_ros
-        pcl_conversions
-	tf
-        std_msgs
-	cmake_modules
-        nav_msgs)
+  roscpp
+  laser_geometry
+  pcl_ros
+  pcl_conversions
+  tf
+  std_msgs
+  cmake_modules
+  nav_msgs)
 
 find_package(Eigen REQUIRED)
 find_package(PCL REQUIRED)
@@ -17,7 +17,7 @@ find_package(PCL REQUIRED)
 add_definitions(${EIGEN_DEFINITIONS})
 
 include_directories(
-  ${CATKIN_INCLUDE_DIRS}
+  ${catkin_INCLUDE_DIRS}
   ${EIGEN_INCLUDE_DIRS}
   ${PCL_INCLUDE_DIRS})
 
